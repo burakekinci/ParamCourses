@@ -1,4 +1,4 @@
-﻿namespace ParamApi.Base.Model
+﻿namespace ParamApi.Base
 {
 
     //INFO : Genel olarak "Data Modelleri"nde ortak olmasını istediğimiz

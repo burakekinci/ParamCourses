@@ -14,6 +14,7 @@ namespace ParamApi.Data.Context
 
         //Db sets
         public DbSet<Account> Account { get; set; }
+        public DbSet<Person> Person { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

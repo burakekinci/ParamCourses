@@ -12,6 +12,7 @@ namespace ParamApi.Data.UnitOfWork.Concrete
         private bool _disposed;
 
         public IGenericRepository<Account> AccountRepository { get; private set; }
+        public IGenericRepository<Person> PersonRepository { get; private set; }
 
 
         public UnitOfWork(AppDbContext appDbContext)
@@ -19,6 +20,7 @@ namespace ParamApi.Data.UnitOfWork.Concrete
             this._appDbContext = appDbContext;
 
             AccountRepository = new GenericRepository<Account>(appDbContext);
+            PersonRepository = new GenericRepository<Person>(appDbContext);
         }
 
 
